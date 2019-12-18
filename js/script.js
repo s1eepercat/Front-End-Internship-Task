@@ -35,7 +35,7 @@ const displayImage = (url, a, w, h) => {
 	main.style.backgroundImage = `url(${resizedImageUrl(url, w, h)})`;		//download resized image that fit your screen precisely
 	console.log(resizedImageUrl(url, w, h));
 
-	// main.style.backgroundImage = `url(${url})`; 							//download original huge size pictures
+	// main.style.backgroundImage = `url(${url})`;		//download original huge size pictures
 	// console.log(url);
 
 
@@ -59,7 +59,7 @@ fetch('https://picsum.photos/v2/list')
 	})
 	.then(urls => urls.map(url => {
 
-		//creating img elements and pushing them into a sidebar
+		//create img elements and push them into a sidebar
 		let img = document.createElement("img");
 		sidebar.appendChild(img);
 
