@@ -33,10 +33,8 @@ const resizedImageUrl = (originalUrl, w, h) => {
 const displayImage = (url, a, w, h) => {
 
 	main.style.backgroundImage = `url(${resizedImageUrl(url, w, h)})`;		//download resized image that fit your screen precisely
-	console.log(resizedImageUrl(url, w, h));
 
 	// main.style.backgroundImage = `url(${url})`;		//download original huge size pictures
-	// console.log(url);
 
 
 	auth.textContent = `Author: ${a}`;
